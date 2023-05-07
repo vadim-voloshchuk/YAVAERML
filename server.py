@@ -2,7 +2,14 @@ from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 from flask_cors import CORS
 from flask_login import LoginManager
+from common.read_funcs import read_features, read_pricing, read_welcome_message
 
+
+features = read_features('files/features_list.txt')
+pricing_list = read_pricing('files/pricing.txt')
+welcome_text = read_welcome_message('files/welcome_message.txt')
+
+# print(features_list, pricing_list)
 
 db = SQLAlchemy()
 

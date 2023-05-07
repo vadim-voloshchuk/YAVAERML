@@ -1,8 +1,9 @@
 from flask import Blueprint, request
-from __main__ import db
+from __main__ import db, pricing_list
 import json
 from flask_login import login_required, current_user
 from models.description_model import Description
+from models.config_lk_model import ConfigLK
 from werkzeug.security import generate_password_hash
 
 
@@ -66,14 +67,32 @@ def change_password():
 @lk.route("/get_design_color")
 @login_required
 def get_design_color():
-    return "OK"
+    design_color = {
+        "design_color": ConfigLK.query.get(current_user.id).design
+        }
+    return json.dumps(design_color)
 
 @lk.route("/change_design_color")
 @login_required
 def change_design_color():
-    return "OK"
+    db.session.query(ConfigLK).filter(ConfigLK.user_id == current_user.id).update({"design": request.json['design']}, synchronize_session=False)
+    db.session.commit()
+    return "Успешно"
+
+@lk.route("/get_tariff_plan")
+@login_required
+def get_tariff_plan():
+    tariff_plan = {
+        "tariff_plan": ConfigLK.query.get(current_user.id).tariff_plan
+        }
+    return json.dumps(tariff_plan)
 
 @lk.route("/choice_of_tariff_plan")
 @login_required
 def choice_of_tariff_plan():
-    return "OK"
+    choice = request.json['tariff_plan']
+    if choice in pricing_list.keys():
+        db.session.query(ConfigLK).filter(ConfigLK.user_id == current_user.id).update({"tariff_plan": request.json['tariff_plan']}, synchronize_session=False)
+        db.session.commit()
+        return "Успешно"
+    return "Такого тарифного плана не существует"
