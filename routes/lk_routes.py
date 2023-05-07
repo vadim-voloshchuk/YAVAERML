@@ -4,6 +4,7 @@ import json
 from flask_login import login_required, current_user
 from models.description_model import Description
 from models.config_lk_model import ConfigLK
+from models.user_model import User
 from werkzeug.security import generate_password_hash
 
 
@@ -96,3 +97,9 @@ def choice_of_tariff_plan():
         db.session.commit()
         return "Успешно"
     return "Такого тарифного плана не существует"
+
+@lk.route("/delete_account")
+def delete_account():
+    db.session.query(User).filter(User.id == current_user.id).delete()
+    db.session.commit()
+    return "Аккаунт успешно удалён"
