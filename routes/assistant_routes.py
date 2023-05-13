@@ -69,7 +69,7 @@ def get_messages():
         else:
             file_name = None
 
-        return [mes.message, mes.is_user, file_name]
+        return [mes.message_number, mes.message, mes.is_user, file_name]
     
     count = int(request.json['count'])
     chat_name = request.json['chat_name']
@@ -113,15 +113,20 @@ def send_message():
     db.session.add(new_message)
     db.session.add(sys_message)
     db.session.commit()
+    file_name = None
+    new_message_number = db.session.query(Messages, db.sql.func.max(Messages.message_number)).filter(Messages.chat_id == chat_id).first()[1]
     if new_gen_file:
-        new_message_number = db.session.query(Messages, db.sql.func.max(Messages.message_number)).filter(Messages.chat_id == chat_id).first()[1]
+        file_name = f"Ответ системы на {new_message_number} сообщение чата {cur_chat_name} на основе {template_raw.template_name}"
         new_file = File(chat_id=chat_names_raw.chat_id, message_number=new_message_number,
-                        file_name=f"Ответ системы на {new_message_number} сообщение чата {cur_chat_name} на основе {template_raw.template_name}",
+                        file_name=file_name,
                         file=file)
         db.session.add(new_file)
         db.session.commit()
     answer = {
-        "answer": sys_answer
+        "user_message_number": new_message_number - 1,
+        "sys_message_number": new_message_number,
+        "answer": sys_answer,
+        "file_name": file_name
     }
     return json.dumps(answer)
 
@@ -130,6 +135,9 @@ def send_message():
 def attach_template():
     template_name = request.json['template_name']
     chat_name = request.json['chat_name']
+    count_such_name = db.session.query(Template.template_name).filter(Template.user_id == current_user.id).count()
+    if count_such_name > 0:
+        return "Шаблон с таким именем уже существует"
     template_id = db.session.query(Template).filter(Template.user_id == current_user.id, Template.template_name == template_name).first().template_id
     db.session.query(ChatNames).filter(ChatNames.user_id == current_user.id, ChatNames.chat_name == chat_name).update({"template_id": template_id}, synchronize_session=False)
     db.session.commit()
