@@ -45,6 +45,48 @@
 Осуществляет выход из лк пользователя.
 
 ### Lk routes
+#### /lk/get_user_info (GET)
+Возращает имя, почту, номер телефона и описание деятельности.  
+Получаемые поля: name, email, phone_number, description
+
+#### /lk/edit_user_name (GET + JSON)
+Позволяет редактировать имя пользователя.  
+Посылаемые поля: name
+
+#### /lk/edit_user_email (GET + JSON)
+Позволяет редактировать почту пользователя.  
+Посылаемые поля: email
+
+#### /lk/edit_user_phone_number (GET + JSON)
+Позволяет редактировать телефонный номер пользователя.  
+Посылаемые поля: phone_number
+
+#### /lk/edit_user_description (GET + JSON)
+Позволяет редактировать описание деятельности пользователя.  
+Посылаемые поля: description
+
+#### /lk/change_password (GET + JSON)
+Позволяет пользователю изменять пароль.  
+Посылаемые поля: password
+
+#### /lk/get_design_color (GET)
+Возращает цвет оформления профиля.  
+Получаемые поля: design_color
+
+#### /lk/change_design_color (GET + JSON)
+Позволяет менять цвет оформления профиля.  
+Посылаемые поля: design_color
+
+#### /lk/get_tariff_plan (GET)
+Возращает выбранный тарифный план пользователя.  
+Получаемые поля: tariff_plan
+
+#### /lk/choice_of_tariff_plan (GET + JSON)
+Позволяет изменять тарифный план.  
+Получаемые поля: tariff_plan
+
+#### /lk/delete_account (GET)
+Позволяет полностью удалять аккаунт.
 
 ### Assistant routes
 
