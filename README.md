@@ -119,7 +119,7 @@
 #### /assistant/send_message (GET + JSON)
 Отправляет сообщение и возвращает ответ на него.  
 Отправляемые данные: chat_name, message  
-Получаемые данные: user_message_number, sys_message_number, answer, file_name
+Получаемые данные: user_message_number, sys_message_number, answer, file_name  
 Получение номеров сообщений (отпправляемого сообщения пользователя и получемого ответа системы) необходимо для дальнейшей стыковки данных.
 
 #### /assistant/attach_template (GET + JSON)
