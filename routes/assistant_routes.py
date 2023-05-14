@@ -20,6 +20,9 @@ assistant = Blueprint('assistant', __name__)
 @login_required
 def upload_template():
     file = request.files['template']
+    count_such_name = db.session.query(Template.template_name).filter(Template.user_id == current_user.id, Template.template_name == file.filename).count()
+    if count_such_name > 0:
+        return "Шаблон с таким именем уже существует"
     new_template = Template(template_name=file.filename, user_id=current_user.id, template_file=file.stream.read())
     db.session.add(new_template)
     db.session.commit()
@@ -135,9 +138,6 @@ def send_message():
 def attach_template():
     template_name = request.json['template_name']
     chat_name = request.json['chat_name']
-    count_such_name = db.session.query(Template.template_name).filter(Template.user_id == current_user.id).count()
-    if count_such_name > 0:
-        return "Шаблон с таким именем уже существует"
     template_id = db.session.query(Template).filter(Template.user_id == current_user.id, Template.template_name == template_name).first().template_id
     db.session.query(ChatNames).filter(ChatNames.user_id == current_user.id, ChatNames.chat_name == chat_name).update({"template_id": template_id}, synchronize_session=False)
     db.session.commit()
