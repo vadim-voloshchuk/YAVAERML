@@ -1,0 +1,42 @@
+{
+  "directed": true,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "id": "благополучность"
+    },
+    {
+      "id": "Здоровье"
+    },
+    {
+      "id": "включает"
+    },
+    {
+      "id": "образ"
+    }
+  ],
+  "links": [
+    {
+      "type": "nsubj",
+      "explanation": "nominal subject",
+      "weight": 0.3333333333333333,
+      "source": "Здоровье",
+      "target": "благополучность"
+    },
+    {
+      "type": "nsubj",
+      "explanation": "nominal subject",
+      "weight": 0.3333333333333333,
+      "source": "Здоровье",
+      "target": "включает"
+    },
+    {
+      "type": "nsubj",
+      "explanation": "nominal subject",
+      "weight": 0.3333333333333333,
+      "source": "образ",
+      "target": "включает"
+    }
+  ]
+}

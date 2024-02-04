@@ -1,0 +1,87 @@
+{
+  "directed": true,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "id": "жила"
+    },
+    {
+      "id": "семья"
+    },
+    {
+      "id": "увидел"
+    },
+    {
+      "id": "один"
+    },
+    {
+      "id": "расстроен"
+    },
+    {
+      "id": "Дельфин"
+    },
+    {
+      "id": "начал"
+    },
+    {
+      "id": "Он"
+    },
+    {
+      "id": "направился"
+    },
+    {
+      "id": "дельфин"
+    },
+    {
+      "id": "восторге"
+    },
+    {
+      "id": "друзья"
+    }
+  ],
+  "links": [
+    {
+      "type": "nsubj",
+      "explanation": "nominal subject",
+      "weight": 0.2,
+      "source": "семья",
+      "target": "жила"
+    },
+    {
+      "type": "nsubj",
+      "explanation": "nominal subject",
+      "weight": 0.2,
+      "source": "один",
+      "target": "увидел"
+    },
+    {
+      "type": "nsubj:pass",
+      "explanation": null,
+      "weight": 1.0,
+      "source": "Дельфин",
+      "target": "расстроен"
+    },
+    {
+      "type": "nsubj",
+      "explanation": "nominal subject",
+      "weight": 0.2,
+      "source": "Он",
+      "target": "начал"
+    },
+    {
+      "type": "nsubj",
+      "explanation": "nominal subject",
+      "weight": 0.2,
+      "source": "дельфин",
+      "target": "направился"
+    },
+    {
+      "type": "nsubj",
+      "explanation": "nominal subject",
+      "weight": 0.2,
+      "source": "друзья",
+      "target": "восторге"
+    }
+  ]
+}

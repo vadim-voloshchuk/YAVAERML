@@ -1,0 +1,20 @@
+[
+  {
+    "subject": "благополучность",
+    "predicate": "Здоровье",
+    "dependency_type": "nsubj",
+    "dependency_explanation": "nominal subject"
+  },
+  {
+    "subject": "включает",
+    "predicate": "образ",
+    "dependency_type": "nsubj",
+    "dependency_explanation": "nominal subject"
+  },
+  {
+    "subject": "включает",
+    "predicate": "Здоровье",
+    "dependency_type": "nsubj",
+    "dependency_explanation": "nominal subject"
+  }
+]

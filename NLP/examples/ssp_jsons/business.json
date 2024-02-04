@@ -1,0 +1,20 @@
+[
+  {
+    "subject": "деятельность",
+    "predicate": "Бизнес",
+    "dependency_type": "nsubj",
+    "dependency_explanation": "nominal subject"
+  },
+  {
+    "subject": "может",
+    "predicate": "Бизнес",
+    "dependency_type": "nsubj:pass",
+    "dependency_explanation": null
+  },
+  {
+    "subject": "требует",
+    "predicate": "Бизнес",
+    "dependency_type": "nsubj",
+    "dependency_explanation": "nominal subject"
+  }
+]

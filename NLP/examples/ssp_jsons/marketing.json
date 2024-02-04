@@ -1,0 +1,14 @@
+[
+  {
+    "subject": "процесс",
+    "predicate": "Маркетинг",
+    "dependency_type": "nsubj",
+    "dependency_explanation": "nominal subject"
+  },
+  {
+    "subject": "включает",
+    "predicate": "Маркетинг",
+    "dependency_type": "nsubj",
+    "dependency_explanation": "nominal subject"
+  }
+]

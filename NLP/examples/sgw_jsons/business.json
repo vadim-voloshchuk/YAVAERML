@@ -1,0 +1,42 @@
+{
+  "directed": true,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "id": "деятельность"
+    },
+    {
+      "id": "Бизнес"
+    },
+    {
+      "id": "может"
+    },
+    {
+      "id": "требует"
+    }
+  ],
+  "links": [
+    {
+      "type": "nsubj",
+      "explanation": "nominal subject",
+      "weight": 0.5,
+      "source": "Бизнес",
+      "target": "деятельность"
+    },
+    {
+      "type": "nsubj:pass",
+      "explanation": null,
+      "weight": 1.0,
+      "source": "Бизнес",
+      "target": "может"
+    },
+    {
+      "type": "nsubj",
+      "explanation": "nominal subject",
+      "weight": 0.5,
+      "source": "Бизнес",
+      "target": "требует"
+    }
+  ]
+}

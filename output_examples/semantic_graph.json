@@ -1,0 +1,42 @@
+{
+  "directed": true,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "id": "человек"
+    },
+    {
+      "id": "работает"
+    },
+    {
+      "id": "должен"
+    },
+    {
+      "id": "Он"
+    }
+  ],
+  "links": [
+    {
+      "type": "nsubj",
+      "explanation": "nominal subject",
+      "weight": 0.3333333333333333,
+      "source": "работает",
+      "target": "человек"
+    },
+    {
+      "type": "nsubj",
+      "explanation": "nominal subject",
+      "weight": 0.3333333333333333,
+      "source": "Он",
+      "target": "должен"
+    },
+    {
+      "type": "nsubj",
+      "explanation": "nominal subject",
+      "weight": 0.3333333333333333,
+      "source": "Он",
+      "target": "работает"
+    }
+  ]
+}

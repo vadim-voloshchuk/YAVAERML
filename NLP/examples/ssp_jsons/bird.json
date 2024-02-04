@@ -1,0 +1,26 @@
+[
+  {
+    "subject": "упала",
+    "predicate": "птица",
+    "dependency_type": "nsubj",
+    "dependency_explanation": "nominal subject"
+  },
+  {
+    "subject": "подошла",
+    "predicate": "птица",
+    "dependency_type": "nsubj",
+    "dependency_explanation": "nominal subject"
+  },
+  {
+    "subject": "благодарна",
+    "predicate": "она",
+    "dependency_type": "nsubj",
+    "dependency_explanation": "nominal subject"
+  },
+  {
+    "subject": "стали",
+    "predicate": "они",
+    "dependency_type": "nsubj",
+    "dependency_explanation": "nominal subject"
+  }
+]

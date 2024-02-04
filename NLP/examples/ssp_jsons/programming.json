@@ -1,0 +1,20 @@
+[
+  {
+    "subject": "искусство",
+    "predicate": "Программирование",
+    "dependency_type": "nsubj",
+    "dependency_explanation": "nominal subject"
+  },
+  {
+    "subject": "процесс",
+    "predicate": "Это",
+    "dependency_type": "nsubj",
+    "dependency_explanation": "nominal subject"
+  },
+  {
+    "subject": "используют",
+    "predicate": "Программисты",
+    "dependency_type": "nsubj",
+    "dependency_explanation": "nominal subject"
+  }
+]

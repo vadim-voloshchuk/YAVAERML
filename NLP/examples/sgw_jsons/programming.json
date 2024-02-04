@@ -1,0 +1,48 @@
+{
+  "directed": true,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "id": "искусство"
+    },
+    {
+      "id": "Программирование"
+    },
+    {
+      "id": "процесс"
+    },
+    {
+      "id": "Это"
+    },
+    {
+      "id": "используют"
+    },
+    {
+      "id": "Программисты"
+    }
+  ],
+  "links": [
+    {
+      "type": "nsubj",
+      "explanation": "nominal subject",
+      "weight": 0.3333333333333333,
+      "source": "Программирование",
+      "target": "искусство"
+    },
+    {
+      "type": "nsubj",
+      "explanation": "nominal subject",
+      "weight": 0.3333333333333333,
+      "source": "Это",
+      "target": "процесс"
+    },
+    {
+      "type": "nsubj",
+      "explanation": "nominal subject",
+      "weight": 0.3333333333333333,
+      "source": "Программисты",
+      "target": "используют"
+    }
+  ]
+}

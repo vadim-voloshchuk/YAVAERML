@@ -1,0 +1,110 @@
+{
+  "directed": true,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "id": "человек"
+    },
+    {
+      "id": "-"
+    },
+    {
+      "id": "должен"
+    },
+    {
+      "id": "Он"
+    },
+    {
+      "id": "проводят"
+    },
+    {
+      "id": "Моряки"
+    },
+    {
+      "id": "должны"
+    },
+    {
+      "id": "Они"
+    },
+    {
+      "id": "выполняет"
+    },
+    {
+      "id": "моряк"
+    },
+    {
+      "id": "работа"
+    },
+    {
+      "id": "Жизнь"
+    },
+    {
+      "id": "видит"
+    },
+    {
+      "id": "сталкивается"
+    },
+    {
+      "id": "он"
+    }
+  ],
+  "links": [
+    {
+      "type": "nsubj",
+      "explanation": "nominal subject",
+      "weight": 0.14285714285714285,
+      "source": "-",
+      "target": "человек"
+    },
+    {
+      "type": "nsubj",
+      "explanation": "nominal subject",
+      "weight": 0.14285714285714285,
+      "source": "Он",
+      "target": "должен"
+    },
+    {
+      "type": "nsubj",
+      "explanation": "nominal subject",
+      "weight": 0.14285714285714285,
+      "source": "Он",
+      "target": "видит"
+    },
+    {
+      "type": "nsubj",
+      "explanation": "nominal subject",
+      "weight": 0.14285714285714285,
+      "source": "Моряки",
+      "target": "проводят"
+    },
+    {
+      "type": "nsubj:pass",
+      "explanation": null,
+      "weight": 1.0,
+      "source": "Они",
+      "target": "должны"
+    },
+    {
+      "type": "nsubj",
+      "explanation": "nominal subject",
+      "weight": 0.14285714285714285,
+      "source": "моряк",
+      "target": "выполняет"
+    },
+    {
+      "type": "nsubj",
+      "explanation": "nominal subject",
+      "weight": 0.14285714285714285,
+      "source": "Жизнь",
+      "target": "работа"
+    },
+    {
+      "type": "nsubj",
+      "explanation": "nominal subject",
+      "weight": 0.14285714285714285,
+      "source": "он",
+      "target": "сталкивается"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+[
+  {
+    "subject": "жила",
+    "predicate": "семья",
+    "dependency_type": "nsubj",
+    "dependency_explanation": "nominal subject"
+  },
+  {
+    "subject": "увидел",
+    "predicate": "один",
+    "dependency_type": "nsubj",
+    "dependency_explanation": "nominal subject"
+  },
+  {
+    "subject": "расстроен",
+    "predicate": "Дельфин",
+    "dependency_type": "nsubj:pass",
+    "dependency_explanation": null
+  },
+  {
+    "subject": "начал",
+    "predicate": "Он",
+    "dependency_type": "nsubj",
+    "dependency_explanation": "nominal subject"
+  },
+  {
+    "subject": "направился",
+    "predicate": "дельфин",
+    "dependency_type": "nsubj",
+    "dependency_explanation": "nominal subject"
+  },
+  {
+    "subject": "восторге",
+    "predicate": "друзья",
+    "dependency_type": "nsubj",
+    "dependency_explanation": "nominal subject"
+  }
+]

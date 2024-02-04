@@ -1,0 +1,50 @@
+[
+  {
+    "subject": "человек",
+    "predicate": "-",
+    "dependency_type": "nsubj",
+    "dependency_explanation": "nominal subject"
+  },
+  {
+    "subject": "должен",
+    "predicate": "Он",
+    "dependency_type": "nsubj",
+    "dependency_explanation": "nominal subject"
+  },
+  {
+    "subject": "проводят",
+    "predicate": "Моряки",
+    "dependency_type": "nsubj",
+    "dependency_explanation": "nominal subject"
+  },
+  {
+    "subject": "должны",
+    "predicate": "Они",
+    "dependency_type": "nsubj:pass",
+    "dependency_explanation": null
+  },
+  {
+    "subject": "выполняет",
+    "predicate": "моряк",
+    "dependency_type": "nsubj",
+    "dependency_explanation": "nominal subject"
+  },
+  {
+    "subject": "работа",
+    "predicate": "Жизнь",
+    "dependency_type": "nsubj",
+    "dependency_explanation": "nominal subject"
+  },
+  {
+    "subject": "видит",
+    "predicate": "Он",
+    "dependency_type": "nsubj",
+    "dependency_explanation": "nominal subject"
+  },
+  {
+    "subject": "сталкивается",
+    "predicate": "он",
+    "dependency_type": "nsubj",
+    "dependency_explanation": "nominal subject"
+  }
+]

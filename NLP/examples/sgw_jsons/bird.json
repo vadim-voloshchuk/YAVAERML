@@ -1,0 +1,58 @@
+{
+  "directed": true,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "id": "упала"
+    },
+    {
+      "id": "птица"
+    },
+    {
+      "id": "подошла"
+    },
+    {
+      "id": "благодарна"
+    },
+    {
+      "id": "она"
+    },
+    {
+      "id": "стали"
+    },
+    {
+      "id": "они"
+    }
+  ],
+  "links": [
+    {
+      "type": "nsubj",
+      "explanation": "nominal subject",
+      "weight": 0.25,
+      "source": "птица",
+      "target": "упала"
+    },
+    {
+      "type": "nsubj",
+      "explanation": "nominal subject",
+      "weight": 0.25,
+      "source": "птица",
+      "target": "подошла"
+    },
+    {
+      "type": "nsubj",
+      "explanation": "nominal subject",
+      "weight": 0.25,
+      "source": "она",
+      "target": "благодарна"
+    },
+    {
+      "type": "nsubj",
+      "explanation": "nominal subject",
+      "weight": 0.25,
+      "source": "они",
+      "target": "стали"
+    }
+  ]
+}

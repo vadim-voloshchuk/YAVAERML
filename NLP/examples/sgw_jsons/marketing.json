@@ -1,0 +1,32 @@
+{
+  "directed": true,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "id": "процесс"
+    },
+    {
+      "id": "Маркетинг"
+    },
+    {
+      "id": "включает"
+    }
+  ],
+  "links": [
+    {
+      "type": "nsubj",
+      "explanation": "nominal subject",
+      "weight": 0.5,
+      "source": "Маркетинг",
+      "target": "процесс"
+    },
+    {
+      "type": "nsubj",
+      "explanation": "nominal subject",
+      "weight": 0.5,
+      "source": "Маркетинг",
+      "target": "включает"
+    }
+  ]
+}
